@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "bin": "lib/cli.js",
   "types": "lib/index.d.ts",
+  "type": "commonjs",
   "files": [
     "lib"
   ],
@@ -30,6 +31,7 @@
   "homepage": "https://github.com/bytenode/bytenode#readme",
   "devDependencies": {
     "electron": "^29.1.0",
+    "esbuild": "^0.23.0",
     "mocha": "^10.3.0"
   }
 }
