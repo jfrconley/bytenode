@@ -29,17 +29,6 @@ const COMPRESSED_OUTPUT_PATH = path.join(ARTIFACTS_PATH, "compressed");
 const COMPRESSED_BYTECODE_OUTPUT_PATH = path.join(COMPRESSED_OUTPUT_PATH, "bytecode.jsc");
 const COMPRESSED_LOADER_OUTPUT_PATH = path.join(COMPRESSED_OUTPUT_PATH, "loader.js");
 
-// // Compile bytecodes
-// compileFile({
-//     filename: RAW_BUNDLE_PATH,
-//     output: COMPRESSED_BYTECODE_OUTPUT_PATH,
-//     loaderFilename: COMPRESSED_LOADER_OUTPUT_PATH,
-// });
-//
-//
-// // Bundle size benchmark
-// const baseline = bytesToHuman(fs.statSync(RAW_BUNDLE_PATH).size);
-
 async function benchmark() {
     // Delete old artifacts
     if (fs.existsSync(ARTIFACTS_PATH)) {
