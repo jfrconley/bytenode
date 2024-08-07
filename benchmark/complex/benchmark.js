@@ -30,6 +30,14 @@ const COMPRESSED_BYTECODE_OUTPUT_PATH = path.join(COMPRESSED_OUTPUT_PATH, "bytec
 const COMPRESSED_LOADER_OUTPUT_PATH = path.join(COMPRESSED_OUTPUT_PATH, "loader.js");
 
 async function benchmark() {
+    // check that hyperfine is installed
+    try {
+        execSync("hyperfine --version", {stdio: "ignore"});
+    } catch (e) {
+        console.error("hyperfine is not installed. Please install it using `cargo install hyperfine`");
+        process.exit(1);
+    }
+
     // Delete old artifacts
     if (fs.existsSync(ARTIFACTS_PATH)) {
         fs.rmSync(ARTIFACTS_PATH, {recursive: true});

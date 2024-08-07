@@ -10,6 +10,7 @@
     "lib"
   ],
   "scripts": {
+    "benchmark": "node ./benchmark/complex/benchmark.js",
     "test": "mocha ./test/*.test.js"
   },
   "repository": {
