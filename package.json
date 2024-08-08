@@ -1,6 +1,6 @@
 {
-  "name": "bytenode",
-  "version": "1.5.6",
+  "name": "@jfconley/bytenode",
+  "version": "2.0.0",
   "description": "A minimalist bytecode compiler for Node.js",
   "main": "lib/index.js",
   "bin": "lib/cli.js",
@@ -27,9 +27,9 @@
   "author": "Osama Abbas <pw.osama@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bytenode/bytenode/issues"
+    "url": "https://github.com/jfrconley/bytenode/issues"
   },
-  "homepage": "https://github.com/bytenode/bytenode#readme",
+  "homepage": "https://github.com/jfrconley/bytenode#readme",
   "dependencies": {
     "esbuild": "^0.23.0"
   },

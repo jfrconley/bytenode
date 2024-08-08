@@ -4,6 +4,8 @@ A minimalist bytecode compiler for Node.js.
 
 This tool truly compiles your JavaScript code into `V8` bytecode, so that you can protect your source code. It can be used with Node.js, as well as Electron and NW.js (check `examples/` directory).
 
+This is a fork of the original bytenode with significant optimizations. A is being submitted to the original repository.
+
 ---
 
 ## Install
